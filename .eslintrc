@@ -1,0 +1,18 @@
+{
+  "globals": {
+    "document": true,
+  },
+  "rules": {
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "react/no-multi-comp": [0, { "ignoreStateless": <boolean> }],
+    "react/prefer-stateless-function": [0, { "ignorePureComponents": <ignorePureComponents> }],
+    "no-console": [0],
+  },
+  "extends": "airbnb",
+  "plugins": [
+      "react",
+      "react-native",
+      "jsx-a11y",
+      "import"
+  ]
+}
