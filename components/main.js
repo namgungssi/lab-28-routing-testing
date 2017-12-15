@@ -8,9 +8,6 @@ import Schedule from './Schedule'
 // Main component renders one of the three
 // Routes . Both roster and schedule will match any pathname.
 // Will only match when pathname is exactly the string.
-
-
-
 const Main = () => (
   <main>
     <Switch>
