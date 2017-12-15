@@ -26,3 +26,5 @@
   "extends": "eslint:recommended"
 },
 node_modules/
+node_modules
+__clientTemp
