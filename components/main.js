@@ -10,6 +10,7 @@ import Schedule from './Schedule'
 // Will only match when pathname is exactly the string.
 
 
+
 const Main = () => (
   <main>
     <Switch>
@@ -19,6 +20,7 @@ const Main = () => (
     </Switch>
   </main>
 )
+
 
 
 export default Main

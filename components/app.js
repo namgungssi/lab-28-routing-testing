@@ -3,6 +3,7 @@ import Header from './Header'
 import Main from './Main'
 
 
+
 const App = () => (
   <div>
     <Header />
@@ -11,4 +12,5 @@ const App = () => (
 )
 
 
-export default App 
+
+export default App
