@@ -1,0 +1,25 @@
+#noteForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.createNoteInput {
+
+  background: white;
+  color: black bold;
+  border: none;
+  padding: .3em .3em;
+  margin: .3em .3em;
+  border-radius: 5px;
+  box-shadow: 2px 5px #4b4f7e;
+
+    &:focus {
+     outline-width: 0;
+    }
+}
+
+#submitButton {
+  margin-bottom: 1.2em;
+}

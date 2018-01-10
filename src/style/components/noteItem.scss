@@ -1,0 +1,53 @@
+#NoteItem {
+
+  @include flex-column;
+  justify-content: center;
+}
+
+
+table {
+  margin: 20% auto;
+  width: 250px;
+  height: 200px;
+  background: white;
+  @include flex-column;
+  justify-content: center;
+  border-color: $bordercolor;
+  line-height: 30%;
+  border-radius: 5px;
+}
+
+
+th {
+  border-bottom: 2px solid #999999;
+  border-top: 1px solid #111111;
+  text-align: left;
+}
+
+
+td {
+  word-wrap: break-word;
+}
+
+
+th, td {
+  padding: 10px 90px 10px 5px;
+  color: black;
+}
+
+
+#backButton {
+  margin-top: 10px;
+  text-decoration: none;
+  background: white;
+  color: black bold;
+  position: relative;
+  top: .5;
+  padding: .8em;
+  border-radius: 5px;
+}
+
+
+Link:hover {
+  color: grey;
+}

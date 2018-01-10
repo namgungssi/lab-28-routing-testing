@@ -1,0 +1,40 @@
+ul {
+ @include flex-row;
+ padding: .1em 0 0;
+ list-style: none;
+}
+
+
+li {
+  padding: 0 .9em;
+  color: ivory;
+}
+
+
+.notelinks {
+  text-decoration: none;
+
+  &:visited {
+    color: yellow;
+  }
+
+  &:hover {
+    color: grey;
+  }
+}
+
+
+#noteList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+a#deleteButton {
+  color: red;
+
+  &:hover {
+    color: gray;
+  }
+}

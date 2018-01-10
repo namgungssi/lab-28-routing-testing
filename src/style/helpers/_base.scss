@@ -1,0 +1,6 @@
+button, input {
+  color: black;
+  &:focus {
+    outline-width: 0;
+   }
+}
