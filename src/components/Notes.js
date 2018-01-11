@@ -20,7 +20,7 @@ class Notes extends React.Component {
 
   handleNewNote(note) {
     saveNote(note);
-    this.props.handler(note):
+    this.props.handler(note);
     location.reload();
   }
 
