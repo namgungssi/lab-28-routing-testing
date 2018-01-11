@@ -5235,6 +5235,10 @@ rc@^1.1.7:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
+react-current-owner@0.0.0:
+  version "0.0.0"
+  resolved "https://registry.yarnpkg.com/react-current-owner/-/react-current-owner-0.0.0.tgz#f4ff80ba96759b6624a722f9114a47d55920e307"
+
 react-dom@^16.2.0:
   version "16.2.0"
   resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-16.2.0.tgz#69003178601c0ca19b709b33a83369fe6124c044"
