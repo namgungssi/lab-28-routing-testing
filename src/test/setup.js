@@ -1,5 +1,5 @@
 import Enzyme  from 'enzyme';
-import Adapter from 'enzyme-adapter-react-13';
+import Adapter from 'enzyme-adapter-react-16';
 
 
 
