@@ -8,17 +8,17 @@ table {
   margin: 20% auto;
   width: 250px;
   height: 200px;
-  background: white;
+  background: yellow;
   @include flex-column;
   justify-content: center;
   border-color: $bordercolor;
-  line-height: 30%;
-  border-radius: 5px;
+  line-height: 50%;
+  border-radius: 10px;
 }
 
 
 th {
-  border-bottom: 2px solid #999999;
+  border-bottom: 2px solid #111111;
   border-top: 1px solid #111111;
   text-align: left;
 }
@@ -39,7 +39,7 @@ th, td {
   margin-top: 10px;
   text-decoration: none;
   background: white;
-  color: black bold;
+  color: red;
   position: relative;
   top: .5;
   padding: .8em;
@@ -48,5 +48,5 @@ th, td {
 
 
 Link:hover {
-  color: grey;
+  color: ivory;
 }
