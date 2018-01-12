@@ -1,7 +1,3 @@
-'use strict';
-
-
-
 import React from 'react';
 import {Link} from 'react-router-dom';
 import {getNote} from '../lib/helpers';
@@ -11,20 +7,22 @@ import {getNote} from '../lib/helpers';
 class NoteItem extends React.Component {
   constructor(props) {
     super(props);
+
     this.state = {
       note: getNote(this.props.location.search.slice(1))
     }
   }
+  
 
   render() {
     console.log(this.state.note);
     return (
-      <div id='noteItem'>
+      <div id='NoteItem'>
       <Link id='backButton' to="/">Back</Link>
       <table>
       <tbody>
       <tr>
-      <th>Title</th>
+      <th>Title:</th>
       <th>Content</th>
       </tr>
       <tr>

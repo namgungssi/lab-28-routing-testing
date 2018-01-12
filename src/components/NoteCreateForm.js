@@ -1,13 +1,12 @@
-'use strict';
-
-
-
 import uuid from 'uuid/v1';
 import React from 'react';
 
 
 
 class NoteCreateForm extends React.Component {
+
+
+
   constructor(props) {
     super(props);
     this.state = {
@@ -22,13 +21,16 @@ class NoteCreateForm extends React.Component {
     this.createNewNote = this.createNewNote.bind(this);
   }
 
+
   componentDidMount() {
     console.log('__STATE__', this.state);
   }
 
+
   handleChange(e) {
     this.setState({[e.target.name]:e.target.value, editing: true})
   }
+
 
   createNewNote(e) {
     e.preventDefault();
@@ -38,6 +40,7 @@ class NoteCreateForm extends React.Component {
 
 
   render() {
+
     return (
       <form id='noteForm' onSubmit={this.createNewNote}>
       <input className='createNoteInput' id='title' placeholder="Note Title" type="text" name="title" onChange={this.handleChange} />
