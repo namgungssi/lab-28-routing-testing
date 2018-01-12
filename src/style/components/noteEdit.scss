@@ -1,0 +1,50 @@
+#NoteEdit {
+    @include flex-column;
+    justify-content: center;
+  }
+
+
+table {
+  width: 400px;
+  height: 300px;
+  background: white;
+  @include flex-column;
+  justify-content: center;
+  border-color: $bordercolor;
+  line-height: 30%;
+  border-radius: 3px;
+}
+
+
+th {
+  border-bottom: 2px solid #111111;
+  border-top: 1px solid #999999;
+  text-align: left;
+}
+
+
+td {
+  word-wrap: break-word;
+}
+
+
+th, td {
+  padding: 10px 90px 10px 2px;
+  color: yellow;
+}
+
+
+#submitEdits {
+  padding: .2em;
+  margin-bottom: .2em;
+}
+
+
+a {
+  text-decoration: none;
+}
+
+
+#Cancel {
+  color: red;
+}

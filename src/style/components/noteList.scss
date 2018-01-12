@@ -1,13 +1,16 @@
 ul {
- @include flex-row;
+ display: flex;
+ flex-direction: row;
+ justify-content: flex-start;
+ align-items: left;
  padding: .1em 0 0;
  list-style: none;
 }
 
 
 li {
-  padding: 0 .9em;
-  color: ivory;
+  padding: 0 .1em;
+  color: white;
 }
 
 
@@ -15,11 +18,11 @@ li {
   text-decoration: none;
 
   &:visited {
-    color: yellow;
+    color: white;
   }
 
   &:hover {
-    color: grey;
+    color: yellow;
   }
 }
 
@@ -35,6 +38,6 @@ a#deleteButton {
   color: red;
 
   &:hover {
-    color: gray;
+    color: yellow;
   }
 }

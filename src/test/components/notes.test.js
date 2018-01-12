@@ -10,13 +10,13 @@ import Notes from '../../components/Notes';
 
 describe('<Notes>', () => {
   test('renders with a clean state', () => {
-
     let app = {
-        state: {
-            notes:[]
-        },
-        setState: (data) => app.state = Object.assign({}, app.state, data)
+      state: {
+        notes:[]
+      },
+      setState: (data) => app.state = Object.assign({}, app.state, data)
     }
+
 
     const component = renderer.create(
       <Notes app={app} />
@@ -26,15 +26,16 @@ describe('<Notes>', () => {
   });
 
 
+
   test('renders notes with the correct titles', () => {
     let app = {
-        state: {
-            notes: [
-              { title:'Note1', content:'Note1 content'},
-              { title:'Note2', content:'Note2 content'}
-            ]
-        },
-        setState: (data) => app.state = Object.assign({}, app.state, data)
+      state: {
+        notes: [
+          { title:'Note1', content:'Note1 content'},
+          { title:'Note2', content:'Note2 content'}
+        ]
+      },
+      setState: (data) => app.state = Object.assign({}, app.state, data)
     }
 
 
