@@ -1,7 +1,3 @@
-'use strict';
-
-
-
 import React from 'react';
 import renderer from 'react-test-renderer';
 import Notes from '../../components/Notes';
@@ -10,7 +6,6 @@ import Notes from '../../components/Notes';
 
 describe('<Notes>', () => {
   test('renders with a clean state', () => {
-
     let app = {
         state: {
             notes:[]
@@ -26,6 +21,7 @@ describe('<Notes>', () => {
   });
 
 
+
   test('renders notes with the correct titles', () => {
     let app = {
         state: {
@@ -36,7 +32,6 @@ describe('<Notes>', () => {
         },
         setState: (data) => app.state = Object.assign({}, app.state, data)
     }
-
 
     const component = renderer.create(
       <Notes app={app} />
