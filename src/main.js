@@ -6,12 +6,14 @@ import './style/main.scss';
 import React from 'react';
 import ReactDom from 'react-dom';
 import {BrowserRouter,Route, Switch} from 'react-router-dom';
+
 import Header from './components/header';
 import Footer from './components/footer';
 import NoteList from './components/NoteList';
 import Notes from './components/Notes';
 import NoteItem from './components/NoteItem';
 import NoteEdit from './components/NoteEdit';
+
 import {removeNote} from './lib/helpers';
 import {getAllNotes} from './lib/helpers';
 import {updateNote}  from './lib/helpers';
@@ -21,6 +23,7 @@ import {updateNote}  from './lib/helpers';
 class App extends React.Component {
   constructor(props) {
     super(props)
+
     this.state = {
       notes: getAllNotes()
     }
@@ -31,17 +34,14 @@ class App extends React.Component {
     this.modifyNote = this.modifyNote.bind(this);
   }
 
-
   componentDidMount() {
     console.log('__STATE__', this.state);
   }
-
 
   updateState() {
     let notes = getAllNotes();
     this.setState({notes});
   }
-
 
   addNote(note) {
     let notes = this.state.notes;
@@ -49,12 +49,10 @@ class App extends React.Component {
     this.setState({notes})
   }
 
-
   modifyNote(note){
     updateNote(note);
     this.updateState();
   }
-
 
   deleteNote(id) {
     removeNote(id);
@@ -79,12 +77,10 @@ class App extends React.Component {
           <NoteList notes={this.state.notes} handler={this.deleteNote} />
           </main>} />
           </Switch>
-          <Footer><p>&copy;2017 Code Fellows 401</p></Footer>
+          <Footer><p>&copy;2017 Paula Mookerjee</p></Footer>
           </div>
         )
       }
     }
 
-
-
-ReactDom.render(<BrowserRouter><App/></BrowserRouter>, document.getElementById('root'));
+    ReactDom.render(<BrowserRouter><App/></BrowserRouter>, document.getElementById('root'));
