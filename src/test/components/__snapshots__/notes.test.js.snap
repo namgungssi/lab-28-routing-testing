@@ -1,0 +1,81 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Notes> renders notes with the correct titles 1`] = `
+<div
+  id="noteWrapper"
+>
+  <h3>
+    Create a Note
+  </h3>
+  <form
+    id="noteForm"
+    onSubmit={[Function]}
+  >
+    <input
+      className="createNoteInput"
+      id="title"
+      name="title"
+      onChange={[Function]}
+      placeholder="Note Title"
+      type="text"
+    />
+    <textarea
+      className="createNoteInput"
+      cols="20"
+      id="content"
+      name="content"
+      onChange={[Function]}
+      placeholder="Content"
+      rows="5"
+      type="text"
+    />
+    <button
+      className="createNoteInput"
+      id="submitButton"
+      type="submit"
+    >
+      Add Note
+    </button>
+  </form>
+</div>
+`;
+
+exports[`<Notes> renders with a clean state 1`] = `
+<div
+  id="noteWrapper"
+>
+  <h3>
+    Create a Note
+  </h3>
+  <form
+    id="noteForm"
+    onSubmit={[Function]}
+  >
+    <input
+      className="createNoteInput"
+      id="title"
+      name="title"
+      onChange={[Function]}
+      placeholder="Note Title"
+      type="text"
+    />
+    <textarea
+      className="createNoteInput"
+      cols="20"
+      id="content"
+      name="content"
+      onChange={[Function]}
+      placeholder="Content"
+      rows="5"
+      type="text"
+    />
+    <button
+      className="createNoteInput"
+      id="submitButton"
+      type="submit"
+    >
+      Add Note
+    </button>
+  </form>
+</div>
+`;
