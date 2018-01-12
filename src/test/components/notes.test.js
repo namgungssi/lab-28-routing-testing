@@ -1,7 +1,3 @@
-'use strict';
-
-
-
 import React from 'react';
 import renderer from 'react-test-renderer';
 import Notes from '../../components/Notes';
@@ -17,14 +13,12 @@ describe('<Notes>', () => {
       setState: (data) => app.state = Object.assign({}, app.state, data)
     }
 
-
     const component = renderer.create(
       <Notes app={app} />
     );
     let tree = component.toJSON();
     expect(tree).toMatchSnapshot();
   });
-
 
 
   test('renders notes with the correct titles', () => {
@@ -37,7 +31,6 @@ describe('<Notes>', () => {
       },
       setState: (data) => app.state = Object.assign({}, app.state, data)
     }
-
 
     const component = renderer.create(
       <Notes app={app} />
