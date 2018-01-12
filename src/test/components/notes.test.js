@@ -21,6 +21,7 @@ describe('<Notes>', () => {
   });
 
 
+
   test('renders notes with the correct titles', () => {
     let app = {
       state: {
