@@ -22,13 +22,16 @@ class NoteCreateForm extends React.Component {
     this.createNewNote = this.createNewNote.bind(this);
   }
 
+
   componentDidMount() {
     console.log('__STATE__', this.state);
   }
 
+
   handleChange(e) {
     this.setState({[e.target.name]:e.target.value, editing: true})
   }
+
 
   createNewNote(e) {
     e.preventDefault();

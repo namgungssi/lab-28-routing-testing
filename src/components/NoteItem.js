@@ -4,6 +4,7 @@
 
 import React from 'react';
 import {Link} from 'react-router-dom';
+import ReactDOM from 'react-dom';
 import {getNote} from '../lib/helpers';
 
 
@@ -17,22 +18,24 @@ class NoteItem extends React.Component {
   }
 
   render() {
-    console.log(this.state.note);
+    let note = this.state.note;
+
     return (
-      <div id='noteItem'>
+      <div id='NoteItem'>
       <Link id='backButton' to="/">Back</Link>
       <table>
       <tbody>
       <tr>
-      <th>Title</th>
+      <th>Title:</th>
       <th>Content</th>
       </tr>
       <tr>
-      <td>{this.state.note[0].title}</td>
-      <td>{this.state.note[0].content}</td>
+      <td>{note.title}</td>
+      <td>{note.content}</td>
       </tr>
       </tbody>
       </table>
+      <Link id='editNote' to={`/note/edit/id?${note.id}`}>Update</Link>
       </div>
     )
   }

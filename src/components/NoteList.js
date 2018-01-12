@@ -14,11 +14,13 @@ class NoteList extends React.Component {
     this.deleteNote = this.deleteNote.bind(this);
   }
 
+
   deleteNote(e) {
-    e.preventDefault();
+    // e.preventDefault();
     let id = e.target.dataset['key'];
     this.props.handler(id)
   }
+
 
   render() {
     const {notes} = this.props;
@@ -27,7 +29,7 @@ class NoteList extends React.Component {
       { notes.map((note, i) => {
         return(
           <ul>
-          <li key={i}><a className='noteLinks' id='deleteButton' onClick={this.delete} data-key={note.id} href="#">Delete</a></li>
+          <li key={i}><a className='notelinks' id='deleteButton' onClick={this.deleteNote} data-key={note.id} href="#">Delete</a></li>
           <li key={note.id}><Link className='notelinks' to={`/note/id?${note.id}`}>{note.title}</Link></li>
           </ul>
         )
