@@ -8,15 +8,6 @@
     "watch": "webpack-dev-server --inline --hot",
     "build": "webpack"
   },
-  "jest": {
-    "setupFiles": [
-      "<rootDir>/src/test/shim.js",
-      "<rootDir>/src/test/setup.js"
-    ],
-    "moduleNameMapper": {
-      "\\.(scss)$": "<rootDir>/node_modules/jest-css-modules"
-    }
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/namgungssi/lab-28-routing-testing.git"
